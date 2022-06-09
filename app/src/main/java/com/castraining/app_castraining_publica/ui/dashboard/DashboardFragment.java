@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +18,7 @@ import com.castraining.app_castraining_publica.adapter.ConvocatoriaAdapter;
 import com.castraining.app_castraining_publica.adapter.CursosAdapter;
 import com.castraining.app_castraining_publica.databinding.FragmentDashboardBinding;
 import com.castraining.app_castraining_publica.model.RcyViewDatosConvocatoria;
+import com.castraining.app_castraining_publica.view.PubApi;
 
 import java.util.ArrayList;
 
@@ -43,17 +46,19 @@ public class DashboardFragment extends Fragment {
         this.miReciclador.setHasFixedSize(true);
 
         miReciclador.setLayoutManager((new LinearLayoutManager(getContext())));
-        RecyclerView.AdapterDataObserver adapterDataObserver = new RecyclerView.AdapterDataObserver() {
+        PubApi api = new PubApi();
 
+        dashboardViewModel.adapter.observe(getViewLifecycleOwner(), new Observer<RecyclerView.Adapter>() {
             @Override
-            public void onItemRangeChanged(int positionStart, int itemCount, Object payload) {
-                super.onItemRangeChanged(positionStart, itemCount);
-                if(payload == null) return;
-                DashboardConvocatoriaRV convocatoriaRV = (DashboardConvocatoriaRV) payload;
-
+            public void onChanged(RecyclerView.Adapter adapter) {
 
             }
-        };
+        });
+
+
+
+
+
 
         //final TextView textView = binding.textDashboard;
         //dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
