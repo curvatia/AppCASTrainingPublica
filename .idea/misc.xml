@@ -10,6 +10,7 @@
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/drawable/background_btn.xml" value="0.1" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/drawable/background_progress_bar.xml" value="0.194" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/drawable/ic_launcher_background.xml" value="0.194" />
+        <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/activity_bottom.xml" value="0.33" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/activity_pub_api.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/activity_pub_detalles.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/activity_pub_detalles_curso.xml" value="0.36666666666666664" />
@@ -17,6 +18,9 @@
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/cardview_pub_detalles.xml" value="0.1" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/element_expanable_child.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/element_expanable_group.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/fragment_dashboard.xml" value="0.291213768115942" />
+        <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/fragment_home.xml" value="0.291213768115942" />
+        <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/fragment_notifications.xml" value="0.291213768115942" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/list_item_busqueda.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/layout/pub_detalles.xml" value="0.365625" />
         <entry key="..\:/Users/curvatia/AndroidStudioProjects/AppCASTrainingPublica/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.231" />
