@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.castraining.app_castraining_publica.adapter.ConvocatoriaAdapter;
@@ -27,7 +28,8 @@ public class DashboardFragment extends Fragment {
 
     //NEW
     private DashboardViewModel dashboardViewModel;
-
+    private RecyclerView miReciclador;
+    private ConvocatoriaAdapter adapter = new ConvocatoriaAdapter(new ArrayList<>());
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -37,10 +39,22 @@ public class DashboardFragment extends Fragment {
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        this.miReciclador = binding.RecicladorView;
+        this.miReciclador.setHasFixedSize(true);
 
+        miReciclador.setLayoutManager((new LinearLayoutManager(getContext())));
+        RecyclerView.AdapterDataObserver adapterDataObserver = new RecyclerView.AdapterDataObserver() {
 
-        final TextView textView = binding.textDashboard;
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+            @Override
+            public void onItemRangeChanged(int positionStart, int itemCount, Object payload) {
+                super.onItemRangeChanged(positionStart, itemCount);
+                if(payload == null) return;
+                
+            }
+        };
+
+        //final TextView textView = binding.textDashboard;
+        //dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
