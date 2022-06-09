@@ -108,7 +108,6 @@ public class PubApi extends AppCompatActivity implements View.OnClickListener {
             }
         });
     }
-
     private void getCursos() {
         pubApiBinding.progressBar.setVisibility(View.VISIBLE);
         pubApiBinding.txtProgressBar.setVisibility(View.VISIBLE);

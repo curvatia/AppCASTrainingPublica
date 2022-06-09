@@ -49,7 +49,9 @@ public class DashboardFragment extends Fragment {
             public void onItemRangeChanged(int positionStart, int itemCount, Object payload) {
                 super.onItemRangeChanged(positionStart, itemCount);
                 if(payload == null) return;
-                
+                DashboardConvocatoriaRV convocatoriaRV = (DashboardConvocatoriaRV) payload;
+
+
             }
         };
 
